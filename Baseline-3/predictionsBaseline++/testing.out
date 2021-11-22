@@ -1,0 +1,9 @@
+Could not find conda environment: project
+You can list all discoverable environments with `conda info --envs`.
+
+  0%|          | 0/6088 [00:00<?, ?it/s]
+Bleu Score on train set  0.09204693593016185
+  0%|          | 0/5143 [00:00<?, ?it/s]
+Bleu Score on validation set  0.06468779541011863
+  0%|          | 0/6088 [00:00<?, ?it/s]
+Bleu score on test set 0.09206121562853999

@@ -1,0 +1,58 @@
+==========================================
+SLURM_JOB_ID = 534341
+SLURM_NODELIST = gnode81
+SLURM_JOB_GPUS = 1,2
+==========================================
+Could not find conda environment: project
+You can list all discoverable environments with `conda info --envs`.
+
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  0  Loss:  3.189144875342873
+Epoch:  0  Validation Loss:  0.7806853955364569
+saved!
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  1  Loss:  0.5327150569449771
+Epoch:  1  Validation Loss:  0.38859155855565514
+saved!
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  2  Loss:  0.34707699089819055
+Epoch:  2  Validation Loss:  0.34406449368697556
+saved!
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  3  Loss:  0.2770425894649022
+Epoch:  3  Validation Loss:  0.3357755069881277
+saved!
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  4  Loss:  0.22943223556842315
+Epoch:  4  Validation Loss:  0.34072952307794097
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  5  Loss:  0.19212776310064575
+Epoch:  5  Validation Loss:  0.35607552499340106
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  6  Loss:  0.16211046153256162
+Epoch:  6  Validation Loss:  0.37619165265782467
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  7  Loss:  0.13862124164440584
+Epoch:  7  Validation Loss:  0.40560345907986006
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  8  Loss:  0.11947466534160246
+Epoch:  8  Validation Loss:  0.4349996566131551
+  0%|          | 0/8800 [00:00<?, ?it/s]
+  0%|          | 0/1116 [00:00<?, ?it/s]
+Epoch:  9  Loss:  0.10476401857036928
+Epoch:  9  Validation Loss:  0.4522016532226769
+Traceback (most recent call last):
+  File "ire_projectmt5.py", line 167, in <module>
+    d = predict(train_loader)
+  File "ire_projectmt5.py", line 151, in predict
+    i,t,l = batch
+ValueError: not enough values to unpack (expected 3, got 2)

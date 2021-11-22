@@ -1,0 +1,62 @@
+Could not find conda environment: project
+You can list all discoverable environments with `conda info --envs`.
+
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  0  Loss:  4.890867090316369
+Epoch:  0  Validation Loss:  0.8557288973636613
+saved!
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  1  Loss:  0.579698576268488
+Epoch:  1  Validation Loss:  0.48322667359599125
+saved!
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  2  Loss:  0.39364527050222575
+Epoch:  2  Validation Loss:  0.4140398629152137
+saved!
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  3  Loss:  0.3122799528151191
+Epoch:  3  Validation Loss:  0.3872702010453627
+saved!
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  4  Loss:  0.25852308165320953
+Epoch:  4  Validation Loss:  0.38067662602431573
+saved!
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  5  Loss:  0.21646619539028608
+Epoch:  5  Validation Loss:  0.3903495063097143
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  6  Loss:  0.18236158849318856
+Epoch:  6  Validation Loss:  0.4028228971473521
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  7  Loss:  0.15505459105799302
+Epoch:  7  Validation Loss:  0.43620488778957295
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  8  Loss:  0.1301019982279048
+Epoch:  8  Validation Loss:  0.45994297854021865
+  0%|          | 0/5166 [00:00<?, ?it/s]
+  0%|          | 0/4133 [00:00<?, ?it/s]
+Epoch:  9  Loss:  0.11079001935354664
+Epoch:  9  Validation Loss:  0.5009595413340543
+Traceback (most recent call last):
+  File "ire_projectmt5All.py", line 157, in <module>
+    d = predict(train_loader)
+  File "ire_projectmt5All.py", line 146, in predict
+    return pd.DataFrame({'input':i_s,'target':t_s,'language':l_s,'prediction':p_s})
+  File "/home/mka_12/anaconda3/lib/python3.8/site-packages/pandas/core/frame.py", line 468, in __init__
+    mgr = init_dict(data, index, columns, dtype=dtype)
+  File "/home/mka_12/anaconda3/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 283, in init_dict
+    return arrays_to_mgr(arrays, data_names, index, columns, dtype=dtype)
+  File "/home/mka_12/anaconda3/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 78, in arrays_to_mgr
+    index = extract_index(arrays)
+  File "/home/mka_12/anaconda3/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 397, in extract_index
+    raise ValueError("arrays must all be same length")
+ValueError: arrays must all be same length
