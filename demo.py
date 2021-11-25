@@ -3,9 +3,7 @@ import numpy as np
 import pandas as pd
 from googletrans import Translator
 
-# st.title("Classification of Iris Species")
-# st.markdown('**Objective** : Given details about the flower we try to predict the species.')
-# st.markdown('The model can predict if it belongs to the following three Categories : **setosa, versicolor, virginica** ')
+
 
 from transformers import T5Tokenizer, MT5ForConditionalGeneration
 import torch
@@ -14,10 +12,16 @@ import pandas as pd
 import numpy as np
 
 "# Generating Natural Language Text from RDF"
+
+
 def get_model(language,model_chosen):
+  '''
+  change the filepath bases on your file directory structure
+  '''
   filepath="/content/t5/model" if language=='English' else "/content/best_modelClipped"\
   if model_chosen=='mT5' else "/content/best_modelbaseline++" if model_chosen =='mT5 multilingual'\
   else "/content/t5/model"
+
   tokenizer_path = filepath if filepath=='/content/t5/model' else '/content/mt5/model'
   tokenizer = T5Tokenizer.from_pretrained(tokenizer_path)
 
@@ -43,6 +47,8 @@ def get_text(inp,tokenizer,model,device):
         test_outputs = test_outputs.to(torch.device('cpu'))
         otp_texts = [tokenizer.decode(i, skip_special_tokens=True) for i in test_outputs]
         return otp_texts[0]
+
+
 prev_lang = ''
 def generate(language,model_chosen):
     st.write('Generating text in ',language)
