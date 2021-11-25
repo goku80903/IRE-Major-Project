@@ -36,3 +36,12 @@ The directory structure is as follows:
 - input - The dataset containing the train, dev and test set which included english, hindi and russuian languages. Note that while evaluating, we ignore the english and russian data. 
 - predictionsBaseline++ - The predictions obtained when mt5 was trained on the above dataset and evaluated on hindi. 
 - ire_projectmt5All.py - Code used for training the mt5 model along with generating the predictions. Note that the predictions should be run with batch_size=1 for each of the dataset and thus, needs to be changed after training and the trained model should be loaded accordingly. 
+
+
+### Running Demo
+```python
+from pyngrok import ngrok
+!nohup streamlit run --server.port 80 demo.py &
+url = ngrok.connect(port ='80')
+print('Public URL(has both https and http tunnels) ',url)
+```
